@@ -7,21 +7,55 @@
 
 .grid-container
 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     background-color: rgb(35, 11, 90);
-    text-align: center;
     position:relative;
+}
 
-  }
-
-.grid-item {
-    background-color: rgb(255, 255, 255);
+.grid-item 
+{
+    background-color: rgb(35, 11, 90);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 2vw;
     width: 100vh;
+    border-width: 4px;
+	border-image: repeating-linear-gradient(45deg, turquoise, pink 4%) 1;
+    border-style: solid;
+
     text-align: center;
     position: absolute;
-  }
+    animation: color-animation 4s linear infinite;
+    
+    
+
+}
+
+.grid-item:hover{
+    border-width: 100px;
+
+}
+  .title-word-1 
+
+{   
+
+
+    --color-1: #c54245;
+    --color-2: #00873E;
+    --color-3: #FABC02;
+}
+
+@keyframes color-animation 
+{
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+  
 
 body
 {
@@ -112,3 +146,54 @@ body
     }
 }
 
+input.name_input
+{
+    position: absolute;
+    top: 40vh;
+    left: 48vw;
+    border: 3px solid rgb(107, 15, 15);
+}
+
+label.name_label
+{
+    color: white;
+    width: 15vw;
+    position: absolute;
+    top: 40vh;
+    left: 33vw;
+}
+
+input.email_input
+{
+    position: absolute;
+    top: 45vh;
+    left: 48vw;
+    border: 3px solid rgb(15, 107, 43);
+}
+
+label.email_label
+{
+    color: white;
+    width: 15vw;
+    position: absolute;
+    top: 45vh;
+    left: 33vw;
+}
+input.submit_button
+{
+    position:relative;
+    top: 55vh;
+    left: 48vw;
+}
+
+.link
+{
+    position: relative;
+    top: 30vh;
+    color: white;
+}
+
+.link:hover
+{
+    color:black;
+}
