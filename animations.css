@@ -5,14 +5,23 @@
     box-sizing: border-box;
 }
 
-p.title
+.grid-container
 {
-    display: flex;
-    color:white;
-    margin-top: 50vh;
-    margin-left: 80vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color:rgb(0, 0, 0);
+    background-color: rgb(35, 11, 90);
+    text-align: center;
     position:relative;
-}
+
+  }
+
+.grid-item {
+    background-color: rgb(255, 255, 255);
+    width: 100vh;
+    text-align: center;
+    position: absolute;
+  }
 
 body
 {
