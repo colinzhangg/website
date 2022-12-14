@@ -26,14 +26,14 @@
     text-align: center;
     position: absolute;
     animation: color-animation 4s linear infinite;
+
     
     
 
 }
 
-.grid-item:hover{
-    border-width: 100px;
-
+.grid-item:focus{
+    box-shadow: 0 0 0 3px #000  ;
 }
   .title-word-1 
 
@@ -146,7 +146,7 @@ body
     }
 }
 
-input.name_input
+input.nameInput
 {
     position: absolute;
     top: 40vh;
@@ -154,7 +154,7 @@ input.name_input
     border: 3px solid rgb(107, 15, 15);
 }
 
-label.name_label
+label.nameLabel
 {
     color: white;
     width: 15vw;
@@ -163,7 +163,7 @@ label.name_label
     left: 33vw;
 }
 
-input.email_input
+input.emailInput
 {
     position: absolute;
     top: 45vh;
@@ -171,7 +171,7 @@ input.email_input
     border: 3px solid rgb(15, 107, 43);
 }
 
-label.email_label
+label.emailLabel
 {
     color: white;
     width: 15vw;
@@ -179,21 +179,10 @@ label.email_label
     top: 45vh;
     left: 33vw;
 }
-input.submit_button
+input.submitButton
 {
-    position:relative;
+    position:absolute;
     top: 55vh;
     left: 48vw;
 }
 
-.link
-{
-    position: relative;
-    top: 30vh;
-    color: white;
-}
-
-.link:hover
-{
-    color:black;
-}
