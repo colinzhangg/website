@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <title>Practicing Animations</title>
@@ -6,11 +6,13 @@
 </head>
 <div class="grid-container">
 <body>
-    <a href="https://www.google.com/"style= "width: 100vw" class="grid-item title-word-1">
-        ENTER YOUR NAME TO WIN A CHRISTMAS RAFFLE!
 
-    </a>
+    <a href="https://www.google.com/"style= "width: 100vw" class="grid-item title-word-1">
+        ENTER YOUR NAME TO WIN A CHRISTMAS GIFT!
+    </a> 
+
         <div class="container">
+
             <div class="bubbles">
                 <span id="red" style="--i:11;"></span>
                 <span id="green"style="--i:12;"></span>
@@ -64,13 +66,22 @@
                 <span id="green"style="--i:16;"></span>
                 <span id= "yellow" style="--i:19;"></span>
             </div>
-        </div>
-        <label class="nameLabel">Enter your name: </label>
-        <input class="nameInput" type="text" placeholder="Enter name here"></input>
-        <label class="emailLabel">Enter your email: </label>
-        <input class="emailInput" type="text" placeholder="Enter email here"></input>
-            <input class="submitButton" type="submit"></input>
-        <script src="submit.js"></script>
-    </div>
+                <script src="submit.js"></script>
+                <label id="nameLabel">Enter your name: </label>
+                <input id="nameInput" type="text" placeholder="Enter name here"></input>
+                <label id="emailLabel">Enter your email: </label>
+                <input id="emailInput" type="text" placeholder="Enter email here"></input>
+                <button type="submit" id="submitButton" onclick="myfunc()">Submit</button>
+
+
+                <table border="1" id="partTable">
+                    <tr>
+                        <th style="width: 50vw">Company</th>
+                        <th style="width: 50vw">Contact</th>
+                        <th style="width: 50vw">Contact</th>
+                    </tr>
+                </table>
+            </div>
+
 </body>
 </html>

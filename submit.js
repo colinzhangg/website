@@ -1,10 +1,10 @@
 //get input from user
 
-function getUserInput(){
-    var nameField = document.getElementByClass('name_input');
-    var emailField = document.getElementByClass('email_input');
-}
+function myfunc() {
+    var name = document.getElementById('nameInput');
+    var email = document.getElementById('emailInput');
+    alert("You have successfully entered the raffle!");
+} 
 
-submitButton.addEventListener('click', function() {
-    alert('You have successfully entered the raffle!');
-})
+// var submitButton = document.getElementByClass('submitButton');
+// submitButton.addEventListener('click', getUserName, false);

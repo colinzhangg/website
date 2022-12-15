@@ -146,7 +146,7 @@ body
     }
 }
 
-input.nameInput
+#nameInput
 {
     position: absolute;
     top: 40vh;
@@ -154,7 +154,7 @@ input.nameInput
     border: 3px solid rgb(107, 15, 15);
 }
 
-label.nameLabel
+#nameLabel
 {
     color: white;
     width: 15vw;
@@ -163,15 +163,14 @@ label.nameLabel
     left: 33vw;
 }
 
-input.emailInput
+#emailInput
 {
     position: absolute;
     top: 45vh;
     left: 48vw;
     border: 3px solid rgb(15, 107, 43);
 }
-
-label.emailLabel
+#emailLabel
 {
     color: white;
     width: 15vw;
@@ -179,10 +178,18 @@ label.emailLabel
     top: 45vh;
     left: 33vw;
 }
-input.submitButton
+#submitButton
 {
     position:absolute;
     top: 55vh;
     left: 48vw;
 }
 
+#partTable
+{
+    border-collapse: collapse;
+    position: absolute;
+    color: white;
+    top: 30vh;
+    left: 70vw;
+}
