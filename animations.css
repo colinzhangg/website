@@ -8,13 +8,13 @@
 .grid-container
 {
     color:rgb(255, 255, 255);
-    background-color: rgb(35, 11, 90);
+    background-color: rgb(43, 11, 49);
     position:relative;
 }
 
 .grid-item 
 {
-    background-color: rgb(35, 11, 90);
+    background-color: rgb(43, 11, 49);
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 2vw;
